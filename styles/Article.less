@@ -41,10 +41,24 @@
   }
 }
 
+// Stretch Goal
+// Animating the menu
 .article-open {
   height: 400px;
+  animation: openDown 2s forwards;
 }
 
+@keyframes openDown {
+  0% { transform: translateY(-350px);}
+  100% { transform: translateY(0px);}
+}
 
+.article-close {
+  height: 400px;
+  animation: closeUp 2s reverse;
+}
 
-
+@keyframes closeUp {
+  0% { transform: translateY(0px);}
+  100% { transform: translateY(-350px);}
+}

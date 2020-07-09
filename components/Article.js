@@ -141,6 +141,7 @@ function articleMaker(artData) {
 
 	expandButtonSpan.addEventListener("click", () => {
 		article.classList.toggle("article-open");
+		article.classList.toggle("article-close");
 	});
 
 	//   Step 3: Don't forget to return something from your function!
