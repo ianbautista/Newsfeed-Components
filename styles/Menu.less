@@ -25,6 +25,17 @@
   text-align: center;
 }
 
+
+// Stretch Goal
+// Animating the menu
+
 .menu--open {
   display: block;
+  animation: slideIn 2s forwards;
+
+}
+
+@keyframes slideIn {
+  0% { transform: translateX(-350px);}
+  100% { transform: translateX(0px);}
 }
